@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Augustin cyberCloud</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">Augustin<span>cyberCloud</span></div>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/cybersecurity">Cybersecurity</a>
+      <a href="/services">Services</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="hero fade-in">
+  <h1>Cybersecurity Blog</h1>
+  <p>
+    Practical insights, tutorials, and real‑world security knowledge from Augustin cyberCloud.
+  </p>
+</section>
+
+<section class="section">
+  <div class="blog-grid">
+
+    <article class="blog-card fade-in">
+      <img src="/images/blog-azure.png" class="blog-thumb" alt="Azure Security">
+      <h3>5 Common Azure Security Misconfigurations</h3>
+      <p class="meta">Cloud Security • By Augustin</p>
+      <p>
+        Learn the most common Azure misconfigurations and how to fix them using best practices.
+      </p>
+      <a href="/blog/azure-misconfigurations.html" class="btn secondary">Read Article</a>
+    </article>
+
+    <article class="blog-card fade-in">
+      <img src="/images/blog-identity.png" class="blog-thumb" alt="Identity Security">
+      <h3>Why Identity Is the New Perimeter</h3>
+      <p class="meta">IAM / Entra ID • By Augustin</p>
+      <p>
+        Modern attacks target identities more than firewalls. Here’s how to think about IAM.
+      </p>
+      <a href="/blog/identity-zero-trust.html" class="btn secondary">Read Article</a>
+    </article>
+
+    <article class="blog-card fade-in">
+      <img src="/images/blog-intune.png" class="blog-thumb" alt="Intune Security">
+      <h3>Intune Compliance: What You Must Configure</h3>
+      <p class="meta">Endpoint Security • By Augustin</p>
+      <p>
+        A practical guide to securing devices using Intune compliance and configuration profiles.
+      </p>
+      <a href="/blog/intune-compliance.html" class="btn secondary">Read Article</a>
+    </article>
+
+    <article class="blog-card fade-in">
+      <img src="/images/blog-ad.png" class="blog-thumb" alt="Active Directory Security">
+      <h3>Hardening Windows Server & Active Directory</h3>
+      <p class="meta">Infrastructure Security • By Augustin</p>
+      <p>
+        Learn how to secure domain controllers, GPO, RBAC, and privileged access.
+      </p>
+      <a href="/blog/ad-hardening.html" class="btn secondary">Read Article</a>
+    </article>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Augustin cyberCloud</p>
+</footer>
+
+<script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo span {
+  color: #1f6feb;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.nav a:hover {
+  color: #1f6feb;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+}
+
+.hero p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: auto;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 16px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.details {
+  margin: 20px 0;
+  color: #374151;
+}
+
+.details a {
+  color: #1f6feb;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #1f6feb;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contact-form-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+}
+
+.form-status {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark .contact-form-box {
+  background: #0b1120;
+  border-color: #1f2937;
+}
+
+body.dark .nav a {
+  color: #9ca3af;
+}
+
+body.dark .nav a:hover {
+  color: #60a5fa;
+}

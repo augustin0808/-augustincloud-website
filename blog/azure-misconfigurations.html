@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Security Misconfigurations | Augustin cyberCloud</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">Augustin<span>cyberCloud</span></div>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/cybersecurity">Cybersecurity</a>
+      <a href="/services">Services</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="article-header fade-in">
+  <h1>5 Common Azure Security Misconfigurations</h1>
+  <p class="meta">Cloud Security • By Augustin</p>
+</section>
+
+<section class="article-body">
+
+  <img src="/images/blog-azure.png" class="article-image" alt="Azure Security">
+
+  <h2>1. Missing Conditional Access Policies</h2>
+  <p>
+    Many organizations rely only on MFA registration without enforcing Conditional Access.
+    This leaves Azure resources exposed to risky sign‑ins.
+  </p>
+
+  <h2>2. Publicly Exposed Storage Accounts</h2>
+  <p>
+    Storage accounts should never allow anonymous access. Always enforce private endpoints.
+  </p>
+
+  <h2>3. No Defender for Cloud Alerts</h2>
+  <p>
+    Defender for Cloud provides essential threat detection. Leaving it disabled is a major risk.
+  </p>
+
+  <h2>4. Over‑Privileged Roles</h2>
+  <p>
+    Avoid assigning Global Administrator unless absolutely necessary. Use PIM for elevation.
+  </p>
+
+  <h2>5. No Logging or Monitoring</h2>
+  <p>
+    Azure Activity Logs and Sign‑In Logs must be sent to a Log Analytics workspace.
+  </p>
+
+  <a href="/blog" class="btn secondary">← Back to Blog</a>
+
+</section>
+
+<footer class="footer">
+  <p>© 2026 Augustin cyberCloud</p>
+</footer>
+
+<script src="blog.js"></script>
+</body>
+</html>
